@@ -6,9 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    
+
     <section>
-   <h1> come si struttura una pagina da capo</h1> 
+   <h1> Come si struttura una pagina da capo</h1> 
    <ul>
     <li> bisogna fare una struttura premendo iniziale "!"</li>
     <li>bisogna realizzare una struttura che comprenda quindi:</li>
@@ -27,7 +27,120 @@
 </ul>
 <ol><li>|main|</li>
 <li>varie |section|</li>
-
 </section>
-</body>
+
+<section>
+<h1>Facciamo ste maledette tabelle</h1>
+<p>bisogna creare una |table| e all'interno il suo |thead|</p>
+<p> poi bisogna creare all'interno del |thead|l'intestazione con tanti |th| quante colonne ci sono </p>
+<p> titoleremo ogni colonna della tabella tipo:</p>
+<ul><li>|th| prima colonna</li>
+    <li>|th| seconda colonna</li>
+    <li>via discorrendo</li>
+</ul>
+<p>e avremo i titoli della nostra tabella</p>
+<h2> come aggiungiamo però il contenuto all'interno della tabella? </h2>
+<p> dobbiamo inserire il |tbody|</p>
+<p> all'interno del |tbody| inseriamo le righe della tabella con i |tr|</p>
+<P> all'interno dei |tr| inseriamo i dati della tabella con i |td|</P>
+<p>esempio:</p>
+<ul><li>creazione di un |tr|</li>
+    <li>creazione dei |td| dentro a ogni |tr| creato</li>
+    <li> inserimento del nome tipo "riga" in ogni |td|</li>
+    <li>via discorrendo per ogni riga |tr|</li>
+</ul>
+<p> i |td| con il colspan"n" gli indichiamo un numero di celle da occupare </p>
+<br>
+<p> con gli esempi che abbiamo fatto andiamo a costruire una tabella.</p>
+</section>
+
+
+<section>
+<h1>tabella senza immaginazione</h1>
+<table>
+    <thead>
+        <th>
+colonna 1
+        </th>
+        <th>
+colonna 2
+</th>
+        <th>
+colonna 3
+        </th>
+        <th>
+colonna 4
+        </th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>r1 c1</td>
+            <td>r1 c2</td>
+            <td>r1 c3</td>
+            <td>r1 c4</td>
+        </tr>
+        <tr>
+            <td>r2 c1</td>
+            <td>r2 c2</td>
+            <td>r2 c3</td>
+            <td>r2 c4</td>
+        </tr>
+        <tr>
+           <td>r3 c1</td>
+            <td>r3 c2</td>
+           <td>r3 c3</td>
+           <td>r3 c4</td>
+        </tr>
+    </tbody>
+</table>
+<p> e fin qui tutto ok, ma andiamo a usare il colspan</p>
+</section>
+
+<section>
+<h1>tabella senza immaginazione ma col colspan</h1>
+<table>
+    <thead>
+        <th>
+            colonna 1
+        </th>
+        <th>
+            colonna 2
+        </th>
+        <th>
+            colonna 3
+        </th>
+        <th>
+            colonna 4
+        </th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>r1 c1</td>
+            <td>r1 c2</td>
+            <td>r1 c3</td>
+            <td>r1 c4</td>
+        </tr>
+        <tr>
+            <td colspan="2">r2 c1 e r2 c2</td>
+            <td>r2 c3</td>
+            <td>r2 c4</td>
+        </tr>
+        <tr>
+           <td>r3 c1</td>
+           <td>r3 c2</td>
+           <td colspan="2">r3 c3 e r3 c4</td>
+        </tr>
+    </tbody>
+</table>
+</section>
+
+<section>
+            <p> il colspan ci permette di far occupare a una cella più celle della tabella </p>
+        <p> in questo caso, di 2 celle </p>
+    </section>
+
+    <section>
+    <a href="C:\Users\ZeRiot\repo dei repi\repo-prova\repo-prova\index.html"> <h1> PAGINA PRECEDENTE </h1> </a>
+</section>
+    </body>
 </html>
