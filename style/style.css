@@ -1,3 +1,14 @@
 body{background-color: blue;
 color: white;
 }
+
+.blocco-contenuto {
+    /* Crea la linea: spessore di 1px, continua (solid), colore grigio chiaro */
+    border-bottom: 1px solid #000000; 
+    
+    /* Spazio tra il testo e la linea */
+    padding-bottom: 25px; 
+    
+    /* Spazio tra la linea e la sezione successiva */
+    margin-bottom: 25px; 
+}
