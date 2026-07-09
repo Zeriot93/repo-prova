@@ -5,51 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        /* Trasforma la lista in un contenitore flessibile */
-        dl {
-            display: grid;
-            grid-template-columns: max-content 1fr;
-            /* Colonna etichette stretta, colonna dati larga */
-            gap: 10px 20px;
-            /* Spazio di 10px tra le righe e 20px tra etichetta e dato */
-            font-family: sans-serif;
-            /* Un font più moderno */
-            background-color: #C65D3B;
-            /* Un leggero sfondo grigio per la scheda */
-            padding: 20px;
-            border-radius: 8px;
-            max-width: 300px;
-            /* Non fa allargare troppo la scheda */
-        }
+    <!--custom css-->
+    <link rel="stylesheet" href="./style/style.css">
 
-        /* Stile per le etichette (Nome, Cognome...) */
-        dt {
-            font-weight: bold;
-            color: #ffffff;
-        }
-
-        /* Stile per i dati (Zeltharian, Warden...) */
-        dd {
-            margin: 0;
-            /* Rimuove lo spostamento a destra brutto di default */
-            color: #000000;
-        }
-        /* Regola dell'Opzione 1: aggiunge la linea sotto alla sezione */
-        .blocco-contenuto {
-            border-bottom: 2px solid #ddd; /* Cambiato a 2px per renderlo più visibile */
-            padding-bottom: 25px;         /* Spazio tra il testo e la linea */
-            margin-bottom: 25px;          /* Spazio tra la linea e il blocco successivo */
-        }
-
-        /* Stile opzionale per non far attaccare l'ultima sezione al fondo pagina */
-        body {
-            font-family: sans-serif;
-            padding: 20px;
-            max-width: 1536px;
-        }
-        
-    </style>
 </head>
 
 <body>
@@ -85,7 +43,7 @@
                 <dd><strong>36,297,871,241</strong></dd>
                 <dt>Patrimonio:</dt>
                 <dd><strong>51,370,022,636 Cr</strong></dd>
-                
+
             </dl>
 
         </section>
@@ -95,9 +53,9 @@
     <main>
         <article>
             <section class="blocco-contenuto">
-                <h1>Storia di Zeltharian Warden</h1>
+                <h1 class="font-red centrocentro ">Storia di Zeltharian Warden</h1>
 
-                <h2>Le Origini - Nascita e Infanzia a Facece</h2>
+                <h2 class="font-gold centrocentro">Le Origini - Nascita e Infanzia a Facece</h2>
                 <p>Zeltharian Warden, conosciuto più tardi nella galassia come ZeRiot93, nacque il 14 settembre 3279 nel
                     sistema di Facece, un angolo relativamente remoto dell’Impero, ma cruciale per la sua posizione
                     strategica. Facece non era un centro di potere come le capitali imperiali, ma la sua vicinanza ai
@@ -194,11 +152,12 @@
                     i suoi sogni di giustizia e potere. E mentre cresceva, il futuro di Zeltharian si stava già
                     scrivendo: il giovane nobile avrebbe imparato a manovrare nelle acque turbolente dell’Impero, pronto
                     a lasciare un segno indelebile sulla storia.</p>
-                <img src="./img/z1.png" alt="Immagine di un giovane Zeltharian Warden" width="1536" height="1024">
+                <img class="immpos" src="./img/z1.png" alt="Immagine di un giovane Zeltharian Warden" width="100%"
+                    height="100%">
             </section>
             <section class="blocco-contenuto">
 
-                <h2>La Tragedia - Attacco e Perdita della Famiglia</h2>
+                <h2 class="font-gold centrocentro">La Tragedia - Attacco e Perdita della Famiglia</h2>
                 <p>Nel 3286, quando Zeltharian aveva appena 7 anni, la sua vita venne stravolta da un evento tragico che
                     segnò il destino della sua famiglia. Un attacco violento e devastante, orchestrato dai Pirati di
                     Zeta Horologii, giunse improvvisamente sulla sua casa. Questa fazione, notoriamente violenta e
@@ -273,10 +232,10 @@
                     solo il suo; il peso di quanto accaduto avrebbe influenzato il corso degli eventi che avrebbero
                     plasmato il suo cammino e la galassia stessa. Le sue scelte future, forgiati nel dolore e
                     nell'oscurità, sarebbero state le sue uniche armi in un universo che lo aveva abbandonato.</p>
-                <img src="./img/z2.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/z2.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
             <section class="blocco-contenuto">
-                <h2>La Salvezza - Soccorsi e Nuovo Pericolo</h2>
+                <h2 class="font-gold centrocentro">La Salvezza - Soccorsi e Nuovo Pericolo</h2>
                 <p>Quando la devastazione culminò e la residenza dei Warden venne ridotta in rovine, il cielo sopra il
                     pianeta Topaz rimase oscurato da nuvole dense di fumo e polvere. Un'aria densa di morte aleggiava
                     sulle macerie di quella che un tempo era stata la residenza nobiliare dei Warden, un luogo simbolo
@@ -354,10 +313,10 @@
                     erano più legati a un nome o a un titolo. Zeltharian era diventato l'ultimo testimone di una casa
                     distrutta, eppure, in qualche modo, il suo destino non era ancora segnato. Il suo viaggio, segnato
                     dalla tragedia e dalla perdita, si stava appena iniziando.</p>
-                <img src="./img/z3.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/z3.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
             <section class="blocco-contenuto">
-                <h2>La Fuga - L'Intervento di Anders Blaine</h2>
+                <h2 class="font-gold centrocentro">La Fuga - L'Intervento di Anders Blaine</h2>
                 <p>Topaz, un pianeta che aveva visto mille storie intrecciarsi tra le sue strade e le sue luci al neon,
                     stava per essere il teatro di una fuga che avrebbe cambiato il destino di un uomo. Non tutti
                     nell'Impero erano accecati dalla visione di Hengist Duval; alcuni ancora cercavano di proteggere la
@@ -446,10 +405,10 @@
                     se stesso, Zeltharian, o meglio, ZeRiot93, sentiva che il suo cammino non sarebbe stato solo una
                     fuga. Era una ricerca, una corsa verso una verità che, pur sfuggente come la luce di una stella
                     lontana, avrebbe un giorno trovato la sua strada nel buio dell’universo.</p>
-                <img src="./img/prov.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/prov.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
             <section class="blocco-contenuto">
-                <h2>Prigionia - Sopravvivenza nel Yu Relay</h2>
+                <h2 class="font-gold centrocentro">Prigionia - Sopravvivenza nel Yu Relay</h2>
                 <p>Dopo la sua fuga da Facece, ZeRiot93 vagò tra i sistemi periferici, cercando di mantenere un profilo
                     basso. La sua libertà, però, fu breve. Catturato da un gruppo di cacciatori di pirati federali, fu
                     portato al Yu Relay, una stazione-carcere orbitale ai confini dello spazio federale. Qui, i
@@ -531,10 +490,10 @@
                     sentiva il bisogno di comunicare con Moon. L’idea di rimanere concentrato sulla propria
                     sopravvivenza era l'unico pensiero che lo occupava. Il resto sarebbe stato lasciato al caso e al
                     destino. La lotta per la libertà era appena iniziata.</p>
-                <img src="./img/prov.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/prov.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
-           <section class="blocco-contenuto">
-                <h2>Il Miracolo della Fuga - Attacco Thargoid e Destino Imperiale</h2>
+            <section class="blocco-contenuto">
+                <h2 class="font-gold centrocentro">Il Miracolo della Fuga - Attacco Thargoid e Destino Imperiale</h2>
                 <p>Dopo la drammatica fuga dal Yu Relay, il destino di Zeltharian sembrava segnato. Abbandonato a se
                     stesso, senza risorse e con l'orrore di un futuro incerto, si trovò a vagare nel buio più profondo
                     dello spazio. A bordo del suo escape pod, la solitudine lo assaliva, ma la sua determinazione,
@@ -600,10 +559,10 @@
                     militari che definivano il destino dell’Impero. Non era solo la sua mente brillante che lo rendeva
                     un uomo temibile, ma anche la sua capacità di vedere oltre le apparenze, di navigare nelle acque
                     tumultuose della politica imperiale con una sicurezza che solo pochi potevano vantare.</p>
-                <img src="./img/prov.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/prov.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
-           <section class="blocco-contenuto">
-                <h2>Emergenza di un Leader - Coraggio e Determinazione</h2>
+            <section class="blocco-contenuto">
+                <h2 class="font-gold centrocentro">Emergenza di un Leader - Coraggio e Determinazione</h2>
                 <p>Nel 3294, a soli quindici anni, Zeltharian si trovava ad affrontare sfide che avrebbero messo alla
                     prova anche gli adulti più esperti. Nonostante la sua giovane età, il suo passato da prigioniero, le
                     sue sofferenze e la sua resilienza lo avevano forgiato, trasformandolo in un giovane determinato e
@@ -688,10 +647,10 @@
                     futuro con una determinazione incrollabile. Ogni nuova sfida lo preparava per quella che sarebbe
                     stata la battaglia finale per il destino dell’Impero, una battaglia che avrebbe messo alla prova non
                     solo le sue capacità strategiche, ma anche il suo coraggio, la sua moralità e la sua lealtà.</p>
-                <img src="./img/prov.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/prov.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
-          <section class="blocco-contenuto">
-                <h2>I PEG - Formazione di un Team di Elite</h2>
+            <section class="blocco-contenuto">
+                <h2 class="font-gold centrocentro">I PEG - Formazione di un Team di Elite</h2>
                 <p>A soli 18 anni, Zeltharian ricevette un incarico che avrebbe cambiato il corso della sua vita. La sua
                     ascesa, infatti, non si fermò alla protezione di Arissa Lavigny-Duval, ma lo portò a un ruolo ancora
                     più importante e pericoloso: la guida del Phoenix Elite Group (PEG), un'unità segreta d’élite
@@ -761,10 +720,10 @@
                     contribuiva a cementare la sua posizione come leader carismatico e come uno dei più rispettati
                     strateghi dell’Impero, capace di manovrare le forze imperiali con la stessa astuzia con cui un
                     maestro di scacchi muove le sue pedine.</p>
-                <img src="./img/prov.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/prov.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
             <section class="blocco-contenuto">
-                <h2>Infiltrazione e Raccolta Prove - Missione nella Casa Legacy di Achenar</h2>
+                <h2 class="font-gold centrocentro">Infiltrazione e Raccolta Prove - Missione nella Casa Legacy di Achenar</h2>
                 <p> Nel 3300, a soli 21 anni, Zeltharian e il Phoenix Elite Group (PEG) furono coinvolti in una missione
                     che avrebbe scosso le fondamenta stesse dell’Impero. L'incarico che ricevettero era tanto pericoloso
                     quanto cruciale: infiltrarsi nella Casa Legacy di Achenar, la residenza dell'Imperatore Hengist
@@ -839,10 +798,10 @@
                     stato solo quello di un esecutore di ordini. Le prove che aveva raccolto, e le sue azioni, lo
                     avevano già posto su un cammino di cambiamento, dove la politica e il destino dell’Impero sarebbero
                     stati influenzati anche dalla sua mano.</p>
-                <img src="./img/prov.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/prov.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
             <section class="blocco-contenuto">
-                <h2>La Verità Sconvolgente - Erede della Dinastia Imperiale</h2>
+                <h2 class="font-gold centrocentro">La Verità Sconvolgente - Erede della Dinastia Imperiale</h2>
                 <p> Nel periodo in cui Arissa Lavigny-Duval consolidava il suo potere e Zeltharian completava la sua
                     ascesa, un segreto sconvolgente venne alla luce, cambiando per sempre il corso della sua vita.
                     Arissa, che aveva sempre visto in Zeltharian non solo un abile comandante ma anche un prezioso
@@ -928,10 +887,10 @@
                     sembrava ormai ineluttabile. Ma la verità che aveva scoperto su se stesso non gli dava solo forza:
                     gli dava una ragione per combattere, per riscattarsi e per riscrivere la storia della sua famiglia.
                 </p>
-                <img src="./img/prov.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/prov.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
             <section class="blocco-contenuto">
-                <h2>L'Impero in Instabilità - la Minaccia del Prismatic Shield Generator</h2>
+                <h2 class="font-gold centrocentro">L'Impero in Instabilità - la Minaccia del Prismatic Shield Generator</h2>
                 <p>Nel 3301, l’Impero subì una scossa che ne minò le fondamenta con la morte del Principe Harold Duval,
                     assassinato per mano dell’Esercito di Liberazione Neo-Marlinista, un gruppo paramilitare estremista
                     che aveva guadagnato terreno nell’Impero. Questo tragico evento, che segnò una rottura senza
@@ -1004,10 +963,10 @@
                     a dover navigare una miriade di sfide. La loro missione di proteggere l'Impero e sostenere la
                     visione di Arissa divenne una questione di vita o di morte, con il futuro dell'intera nazione in
                     bilico.</p>
-                <img src="./img/prov.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/prov.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
             <section class="blocco-contenuto">
-                <h2>Instabilità nell'impero - La Liberazione di Facece</h2>
+                <h2 class="font-gold centrocentro">Instabilità nell'impero - La Liberazione di Facece</h2>
                 <p>Il sistema di Facece, da sempre un baluardo dell’Impero, si trovava ora stretto nella morsa di una
                     ribellione devastante. L’insurrezione dell’Ordine Alleato di Facece aveva rovesciato il Partito
                     dell’Impero di Facece nel gennaio del 3302, innescando una lunga e sanguinosa guerra civile.
@@ -1079,10 +1038,10 @@
                     spesso guidate dalla necessità di mantenere un controllo rigido e autoritario, ma questo la poneva
                     in contrasto con sua cugina Aisling Duval, che aspirava a modernizzare l’Impero con una visione più
                     inclusiva e progressista.</p>
-                <img src="./img/prov.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/prov.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
             <section class="blocco-contenuto">
-                <h2>Il Disastro di Baal - L'evento di Stromgren Orbital</h2>
+                <h2 class="font-gold centrocentro">Il Disastro di Baal - L'evento di Stromgren Orbital</h2>
                 <p> Nel 3305, il sistema di Baal divenne il cuore pulsante della lotta di Aisling Duval per consolidare
                     il suo potere all'interno dell'Impero. Con il Prismatic Shield Generator in suo possesso, Aisling
                     intendeva utilizzarlo come simbolo della sua forza, non solo per proteggere l’Impero dalle minacce
@@ -1167,10 +1126,10 @@
                     l’inizio di una serie di eventi che avrebbero cambiato il destino di tutto l'Impero. E mentre
                     l'influenza di Arissa cresceva, una nuova minaccia stava per emergere nel sistema di Achenar, a
                     Capitol, che avrebbe messo in discussione ogni piano futuro.</p>
-                <img src="./img/prov.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/prov.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
             <section class="blocco-contenuto">
-                <h2>Rapimento e Salvataggio - La Liberazione di Lavigny Duval</h2>
+                <h2 class="font-gold centrocentro">Rapimento e Salvataggio - La Liberazione di Lavigny Duval</h2>
                 <p>Nel gennaio del 3307, l’Impero si trovava sull’orlo di una crisi che avrebbe potuto distruggerne
                     l’unità. Lavigny Duval, erede al trono e figura centrale nella monarchia imperiale, era da tempo
                     oggetto di minacce credibili alla sua vita. La sua figura aveva attirato l’attenzione di numerosi
@@ -1244,10 +1203,10 @@
                     era mai sicuro. Nuove sfide politiche e militari si profilavano all'orizzonte, e con il suo
                     crescente potere, il futuro di Zeltharian sarebbe diventato sempre più incerto. Ma una cosa era
                     certa: il suo nome era ormai indissolubilmente legato al destino dell’Impero.</p>
-                <img src="./img/prov.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/prov.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
             <section class="blocco-contenuto">
-                <h2>Fortificazione di Baal e Zeta Horologii - La Fase Finale di una Vendetta</h2>
+                <h2 class="font-gold centrocentro">Fortificazione di Baal e Zeta Horologii - La Fase Finale di una Vendetta</h2>
                 <p>Il 21 Settembre 3310, l'Impero Subscrutato si trovò a un bivio decisivo. Il sistema di Baal, che in
                     passato era stato solo una roccaforte strategica, venne trasformato in una fortezza inespugnabile,
                     simbolo di potere assoluto sotto il controllo diretto di Lavigny Duval. La sua trasformazione da
@@ -1323,10 +1282,10 @@
                     vendetta personale, quella che aveva in mente fin dall'inizio, era ancora incompleta, e la fine
                     della guerra per Zeta Horologii dipendeva solo dal fatto che fosse riuscito a distruggere il cuore
                     della Brotherhood una volta per tutte.</p>
-                <img src="./img/prov.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/prov.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
             <section class="blocco-contenuto">
-                <h2>Riunione Segreta - La Preparazione dell'Operazione Decisiva</h2>
+                <h2 class="font-gold centrocentro">Riunione Segreta - La Preparazione dell'Operazione Decisiva</h2>
                 <p>Il 22 Settembre 3310, la stazione Oterma Station, situata nel sistema Baal, divenne il teatro di un
                     incontro che avrebbe definito il destino della regione e determinato il futuro della guerra contro i
                     Brotherhood di Zeta Horologii. La stazione, un avamposto fortemente fortificato e protetto dalle
@@ -1425,10 +1384,10 @@
                     fazioni ribelli sarebbe stato sigillato. La fine della pirateria avrebbe rappresentato non solo una
                     vittoria per l’Impero, ma anche il culmine di anni di lotte e sacrifici. Il colpo finale sarebbe
                     stato dato, e nessuno avrebbe esitato.</p>
-                <img src="./img/prov.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/prov.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
             <section class="blocco-contenuto">
-                <h2>La Guerra Finale a Zeta Horologii - La Caduta dei Brotherhood</h2>
+                <h2 class="font-gold centrocentro">La Guerra Finale a Zeta Horologii - La Caduta dei Brotherhood</h2>
                 <p>Il 23 Settembre 3310, il sistema di Zeta Horologii divenne il palcoscenico di una battaglia che
                     avrebbe segnato la fine di un’era di caos e violenza. La guerra contro i Brotherhood di Zeta
                     Horologii, una coalizione di fazioni ribelli e pirati, si concluse con la definitiva vittoria delle
@@ -1514,10 +1473,10 @@
                     la pace sarà il nostro vero trionfo." Un trionfo che avrebbe richiesto pazienza, diplomazia e la
                     capacità di ricostruire una regione distrutta dalla violenza e dalla guerra. La battaglia per la
                     libertà era finita, ma quella per la giustizia e l’unità stava appena iniziando.</p>
-                <img src="./img/prov.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/prov.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
             <section class="blocco-contenuto">
-                <h2>L'Ascesa di Zeltharian e la Fondazione della PEG Enterprise - Un Faro di Stabilità e Rinascita</h2>
+                <h2 class="font-gold centrocentro">L'Ascesa di Zeltharian e la Fondazione della PEG Enterprise - Un Faro di Stabilità e Rinascita</h2>
                 <p>Il 24 Settembre 3310 non fu solo un giorno di vittoria per Zeltharian , ma un momento di
                     trasformazione epocale per l'intero Impero. Dopo aver abbattuto con determinazione e precisione i
                     Brotherhood di Zeta Horologii, Zeltharian ricevette il riconoscimento che sancì la sua ascesa
@@ -1605,10 +1564,10 @@
                     corruzione. E Zeltharian, con la sua visione illuminata e la sua leadership ferma, si preparava a
                     guidare l'Impero verso un futuro di prosperità e sicurezza, consapevole che il cammino sarebbe stato
                     lungo, ma che il suo destino era ormai scritto tra le stelle.</p>
-                <img src="./img/prov.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/prov.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
             <section class="blocco-contenuto">
-                <h2>Il Risveglio del Titano – L’Ombra su Wolf 359</h2>
+                <h2 class="font-gold centrocentro">Il Risveglio del Titano – L’Ombra su Wolf 359</h2>
                 <p>Il 7 novembre 3310 segnò un punto di rottura nella storia dell’umanità. In un periodo di apparente
                     stabilità, mentre i Phoenix Elite Group (PEG) consolidavano il controllo imperiale nei sistemi di
                     Baal e Zeta Horologii — eliminando cellule anarchiche, reprimendo la pirateria rimasta e rafforzando
@@ -1725,11 +1684,11 @@
                     E mentre Cocijo avanzava silenziosamente verso Sol, una nuova era di guerra totale stava per
                     iniziare — una guerra che avrebbe deciso il destino non solo dell’Impero, ma dell’intera umanità.
                 </p>
-                <img src="./img/prov.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/prov.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
 
             <section class="blocco-contenuto">
-                <h2>Fuoco nella Bolla – L’Alleanza con l’Anti-Xeno Initiative</h2>
+                <h2 class="font-gold centrocentro">Fuoco nella Bolla – L’Alleanza con l’Anti-Xeno Initiative</h2>
                 <p>L’8 novembre 3310 segnò l’inizio ufficiale dell’invasione.
                     Dopo i primi segnali intercettati nel sistema Wolf 359, la minaccia Thargoid si manifestò
                     apertamente all’interno della Bolla umana. Non si trattava più di avvistamenti isolati o incursioni
@@ -1836,7 +1795,7 @@
                     La guerra non era stata vinta.
 
                     Era appena entrata nella sua fase più pericolosa.</p>
-                <img src="./img/prov.png" alt="immagine provvisoria" width="1536" height="1024">
+                <img src="./img/prov.png" alt="immagine provvisoria" width="100%" height="100%">
             </section>
         </article>
     </main>
