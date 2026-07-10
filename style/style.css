@@ -9,36 +9,84 @@ body {
 
 
 
-/* Trasforma la lista in un contenitore flessibile */
-dl {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    /* Colonna etichette stretta, colonna dati larga */
-    gap: 10px 20px;
-    /* Spazio di 10px tra le righe e 20px tra etichetta e dato */
-    font-family: sans-serif;
-    /* Un font più moderno */
-    background-color: #C65D3B;
-    /* Un leggero sfondo grigio per la scheda */
-
+/* Il contenitore principale ora si sviluppa in verticale */
+.scheda-pilota-header {
+    background: linear-gradient(135deg, #15191E 0%, #1E252B 100%);
+    border: 1px solid #C65D3B;
+    border-left: 5px solid #C65D3B;
+    border-bottom: none !important; /* Rimuove sempre la linea sotto */
+    border-radius: 6px;
     padding: 20px;
-    border-radius: 8px;
-    max-width: 300px;
-    /* Non fa allargare troppo la scheda */
-}
-
-/* Stile per le etichette (Nome, Cognome...) */
-dt {
-    font-weight: bold;
+    margin: 15px 0; /* Lo allinea a sinistra (0 a destra), togliendo l'auto */
+    
+    /* Cambiato da 1200px a 350px per farlo stretto e verticale */
+    max-width: 350px; 
+    font-family: 'Segoe UI', Roboto, sans-serif;
     color: #F1F5F9;
+    
+    /* Dispone i 3 blocchi in verticale (uno sotto l'altro) */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spazio tra un blocchetto e l'altro */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 
-/* Stile per i dati (Zeltharian, Warden...) */
-dd {
-    margin: 0;
-    /* Rimuove lo spostamento a destra brutto di default */
-    color: #000000;
+/* Le singole colonne (ora righe verticali) */
+.scheda-sezione {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid rgba(198, 93, 59, 0.2);
 }
+
+/* Titoli delle sezioni */
+.scheda-sezione h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #C65D3B;
+    border-bottom: 1px solid rgba(198, 93, 59, 0.4);
+    padding-bottom: 5px;
+}
+
+/* Icone del menu HUD */
+.hud-icon {
+    margin-right: 5px;
+}
+
+/* Setup della lista dati interna alle colonne */
+.scheda-sezione dl {
+    display: grid;
+    grid-template-columns: max-content 1fr; /* Adatta la prima colonna al testo */
+    gap: 8px 15px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+/* Etichette (Nome, Ruolo...) */
+.scheda-sezione dt {
+    font-size: 0.85rem;
+    color: #94A3B8;
+    font-weight: 500;
+}
+
+/* Dati veri e propri */
+.scheda-sezione dd {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #F8FAFC;
+    text-align: right; /* Mantiene i dati puliti e allineati a destra */
+    font-weight: 600;
+}
+
+/* Dettagli estetici per i dati importanti */
+.evidenziato { color: #C65D3B !important; }
+.rango { color: #F59E0B !important; }
+.valuta { font-family: monospace; color: #10B981 !important; }
+
 
 /* Regola dell'Opzione 1: aggiunge la linea sotto alla sezione */
 .blocco-contenuto {
