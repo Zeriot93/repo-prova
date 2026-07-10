@@ -1,6 +1,10 @@
 body {
     background-color: #0A0A0A;
     color: #F1F5F9;
+        font-family: sans-serif;
+
+    text-align: center;
+   
 }
 
 
@@ -40,20 +44,22 @@ dd {
 .blocco-contenuto {
     border-bottom: 2px solid #ddd;
     /* Cambiato a 2px per renderlo più visibile */
-    padding-bottom: 25px;
+    padding-bottom: 5px;
     /* Spazio tra il testo e la linea */
     margin-bottom: 2px;
     /* Spazio tra la linea e il blocco successivo */
 }
 
-/* Stile opzionale per non far attaccare l'ultima sezione al fondo pagina */
-body {
-    font-family: sans-serif;
-
-
-    text-align: center;
-    
+.blocco-contenuto2 {
+    border-bottom: 2px solid #ddd;
+    /* Cambiato a 2px per renderlo più visibile */
+    padding-bottom: 0px;
+    /* Spazio tra il testo e la linea */
+    margin-bottom: -10%;
+    /* Spazio tra la linea e il blocco successivo */
 }
+
+
 
 header {
     text-align: center;
@@ -66,7 +72,7 @@ header {
     
     /* Aggiungi queste due righe per assicurare la larghezza e dare spazio interno */
     width: 100%;                  
-    padding: 60px 20px; 
+    padding: 0% 0.5%; 
 }
 
 h1 {
